@@ -1,0 +1,142 @@
+//Global colors
+$orange-color: #f4743b;
+$lemon-color: #beee62;
+$green-color: #70ae6e;
+$brown-color: #483c46;
+$blue-color: #3c6e71;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+ul {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.btn-primary {
+  background-color: $green-color;
+  border: 1px solid $green-color;
+  padding: 15px 20px;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $orange-color;
+    border: 1px solid $orange-color;
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  nav {
+    .nav-link {
+      font-size: 1em;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-left: 20px;
+      &:hover {
+        color: $orange-color;
+      }
+    }
+
+    .logo {
+      text-transform: uppercase;
+      font-size: 1.3em;
+      font-weight: 700;
+      color: $lemon-color;
+      &:hover {
+        color: $orange-color;
+      }
+    }
+  }
+}
+
+.section-1 {
+  .hero {
+    background:
+      linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../images/hero.jpg");
+
+    min-height: 800px;
+    color: white;
+
+    span {
+      color: $lemon-color;
+      font-size: 1.5em;
+      font-weight: 600px;
+    }
+  }
+}
+
+.section-2 {
+  img {
+    border-radius: 30px;
+  }
+
+  span {
+    display: block;
+    text-transform: uppercase;
+    color: $orange-color;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+}
+
+footer {
+  background-color: $brown-color;
+  color: white;
+
+  h3 {
+	text-align: center;
+    color: $lemon-color;
+	margin-bottom: 16px;
+  }
+
+  .footer-logo{
+	text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+	&:hover {
+	  color: $green-color;
+	}
+  }
+
+  ul {
+	li {
+	  padding: 5px 0px;
+	  text-align: center;
+	}
+  }
+}
