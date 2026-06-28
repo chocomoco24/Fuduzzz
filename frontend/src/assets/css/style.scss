@@ -33,6 +33,16 @@ ul {
   padding-left: 0;
 }
 
+.section-header {
+  span {
+    text-transform: uppercase;
+    color: $orange-color;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+  }
+}
+
 .btn-primary {
   background-color: $green-color;
   border: 1px solid $green-color;
@@ -47,9 +57,6 @@ ul {
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  background-color: #000000;
   nav {
     .nav-link {
       font-size: 1em;
@@ -111,32 +118,155 @@ header {
   }
 }
 
+.section-3 {
+  .item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    &:hover {
+      .service-body {
+        transform: translateY(0%);
+        .service-content {
+          opacity: 1;
+        }
+      }
+    }
+    .service-image {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        border-radius: 40px;
+        aspect-ratio: 1/1.2;
+        object-fit: cover;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 40px;
+        background: linear-gradient(
+          180deg,
+          rgba(217, 217, 217, 0) 0%,
+          rgba(217, 217, 217, 0) 13.02%,
+          rgba(0, 0, 0, 0.51) 42.5%,
+          rgba(0, 0, 0, 0.63) 70%,
+          #000000 100%
+        );
+      }
+    }
+
+    .service-body {
+      color: white;
+      position: absolute;
+      left: 30px;
+      right: 30px;
+      bottom: 30px;
+      transform: translateY(80%);
+      transition: all 0.4s ease-in-out;
+
+      .service-content {
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.section-4 {
+  .card {
+    border: none;
+    padding: 24px;
+    margin-top: 24px;
+    border-radius: 40px;
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.section-5 {
+
+  .swiper{
+    padding: 25px 25px 50px 25px;
+
+    .swiper-pagination-bullet-active{
+      background-color: $brown-color;
+    }
+  }
+  
+  .card {
+     border: none;
+    padding: 24px;
+    margin-top: 24px;
+    border-radius: 40px;
+    .card-body {
+      padding: 48px;
+      .rating {
+        display: flex;
+        color: $orange-color;
+        gap: 5px;
+      }
+
+      .content {
+        padding-top: 24px;
+        padding-bottom: 8px;
+        p {
+          font-size: 1em;
+        }
+      }
+
+      .person{
+        display: flex;
+        img{
+          width: 50px;
+          border-radius: 50%;
+        }
+        .person-info{
+          padding-left: 16px;
+
+          .name{
+            font-size: 1.3em;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
 footer {
   background-color: $brown-color;
   color: white;
 
   h3 {
-	text-align: center;
+    text-align: center;
     color: $lemon-color;
-	margin-bottom: 16px;
+    margin-bottom: 16px;
   }
 
-  .footer-logo{
-	text-align: left;
+  .footer-logo {
+    text-align: left;
   }
 
   a {
     text-decoration: none;
     color: white;
-	&:hover {
-	  color: $green-color;
-	}
+    &:hover {
+      color: $green-color;
+    }
   }
 
   ul {
-	li {
-	  padding: 5px 0px;
-	  text-align: center;
-	}
+    li {
+      padding: 5px 0px;
+      text-align: center;
+    }
   }
 }
