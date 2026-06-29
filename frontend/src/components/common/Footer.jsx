@@ -3,11 +3,11 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-                <div className="container py-5">
+                <div className="container pt-5 pb-4">
                     <div className="row pb-3">
-                        <div className="col-md-2">
+                        <div className="col-md-3">
                             <h3 className='footer-logo'>Fuduzzz</h3>
-                            <div className="pe-5">
+                            <div className="pe-5 py-1">
                                 <p>Our post-deployment services gives you peace of mind knowing that we are still here for your help and support.</p>
                             </div>
 
