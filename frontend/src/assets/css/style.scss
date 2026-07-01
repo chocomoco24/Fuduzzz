@@ -329,8 +329,29 @@ header {
           color: rgb(131, 130, 130);
         }
       }
-      .card-logo{
-          margin-top: 0.5rem;
+      .card-logo {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+.contact-section-1 {
+  .card {
+    border: none;
+    border-radius: 40px;
+    padding: 24px 16px;
+    .card-body{
+      h3{
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+      a{
+        text-decoration: none;
+        color: rgb(56, 56, 56);
+        &:hover{
+          color: $orange-color;
+        }
       }
     }
   }

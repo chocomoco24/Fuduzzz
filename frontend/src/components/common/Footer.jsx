@@ -77,7 +77,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <hr />
-                    <div className="text-center pt-4">Copyright &copy; 2026 Fuduzzz. All Rights Reserved.</div>
+                    <div className="text-center pt-1">Copyright &copy; 2026 Fuduzzz. All Rights Reserved.</div>
                 </div>
             </footer>
   )
